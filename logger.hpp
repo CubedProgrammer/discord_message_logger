@@ -2,6 +2,7 @@
 #define logger_HPP_INCLUDED
 #include<dpp/dpp.h>
 
+void save_attachments(const dpp::message& msg);
 void logmsg(const dpp::message& msg);
 void updated(const dpp::message_update_t& evt);
 void sent(const dpp::message_create_t& evt);
